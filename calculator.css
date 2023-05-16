@@ -1,0 +1,35 @@
+body {
+    height: 88vh;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.calculator {
+    margin: 5% 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-auto-rows: 12vh;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: .5rem;
+    border: 6px solid #171717;
+    background-color: aliceblue;
+}
+
+button {
+    font-size: 4vh;
+}
+
+.display {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 5vh;
+    text-align: end;
+    margin: auto 3vw;
+}
+
+[data-key="="] {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    font-size: 6vh;
+}
